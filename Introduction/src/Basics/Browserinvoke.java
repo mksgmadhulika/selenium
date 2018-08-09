@@ -14,12 +14,16 @@ public class Browserinvoke {
 		//System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
 		
 	WebDriver driver=new FirefoxDriver();
-	driver.get("https://www.amazon.com/");
+	driver.get("https://www.google.com");
 	System.out.println(driver.getTitle());
-	System.out.println(driver.getPageSource());
-	System.out.println(driver.getCurrentUrl());
+	//System.out.println(driver.getPageSource());
+	//System.out.println(driver.getCurrentUrl());
+	
+	//driver.get("https://www.amazon.in/");
+	driver.navigate().to("https://www.amazon.in/");
+	//driver.navigate().back();
+	//driver.navigate().forward();
 	driver.close();
-
 	}
 
 }
